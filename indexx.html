@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+
+
+<!-- FONTS GOOGLE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.3.1/css/all.css">
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+
+  background: #00c000;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background: linear-gradient(180deg,green,white);
+  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#03bc03,white);
+  height: 100px;
+  width: 100%;
+  box-shadow: inset 0 -1px 0 0 green, inset 0 1px 0 0 green;
+  font-size: 0;
+  box-sizing: border-box;
+  padding: 0 75px;
+
+  box-shadow: inset 0 -1px 0 0 #54e154, inset 0 1px 0 0 #54e154;
+}
+header > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  font-size: 14px;
+  text-align: center;
+}
+header nav {
+  width: calc(100% - 300px);
+  text-align: right;
+}
+#logo span {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+
+  font-family: "Dancing Script", cursive;
+}
+
+nav ul {
+  background: linear-gradient(white,transparent 50%),linear-gradient(transparent,#54e154);
+  display: inline-block;
+  height: 60px;
+  margin-top: 20px;
+  padding: 0 15px;
+  border-radius: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+
+  line-height: 60px;
+}
+nav ul li a {
+  padding: 8px 15px;
+  margin: 0 5px;
+  color: #fff;
+  background: green;
+  background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(green,#01ab01,#0f0);
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #ace9ac,0 0 0 2px #00d6005c;
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+main {
+
+}
+article {
+
+}
+#section-fr, #section-th { /* SECTION */
+  width: calc(100% - 150px);
+/*  min-height: 500px;*/
+  background: white;
+  margin: 0 auto;  
+  margin-top: 10px;
+  border-radius: 30px;
+  background: #54e154;
+
+  display: none;
+
+  background: linear-gradient(#ffffff47,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000,transparent,#00c000),linear-gradient(90deg,transparent,#54e154);
+  box-shadow: inset 0 0 0 1px #54e154;
+  background: linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000,transparent,#00c000),linear-gradient(90deg,transparent,#54e154);
+  background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15442 50%,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
+
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+#section-fr, #section-tw, #section-th {
+  display: block;
+}
+.section-title {
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0 25px;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+/*  background: #54e154;*/
+  border-radius: 30px 30px 0 0;
+
+  position: relative;
+}
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(white,transparent),linear-gradient(transparent,#54e154,#00c000);
+  border-radius: 30px 30px 0 0;
+  mix-blend-mode: overlay;
+}
+.section-body {
+  min-height: 390px;
+  font-size: 0;
+}
+.section-footer {
+/*  background: #54e154;*/
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 1px 0 0 #59ff59,0 0 0 1px #54e154;
+
+  position: relative;
+  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);
+}
+.section-footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(#ffffff38,#54e154);
+/*  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);*/
+/*  background: linear-gradient(#ffffff61,#ffffff1f,transparent),linear-gradient(transparent,#54e154,#00c000);*/
+
+  mix-blend-mode: overlay;
+}
+
+.section-l, .section-r, .section-th-l, .section-th-r {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+
+  position: relative;
+  z-index: 1;
+}
+.section-r {
+  width: 70%;
+}
+
+.section-th-l, .section-th-r {
+  width: 50%;
+}
+
+
+#photo-box {
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be00cf);
+  height: 380px;
+  width: calc(100% - 30px);
+  margin: 15px auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+#section-photo {
+  background: url(https://sun9-48.vkuserphoto.ru/s/v1/ig2/vS1cotY_tsDJF4vLJWp0GqGdnu0vSFdcgN49Nv3SAs6y7ysYfO-afZoXe9qdMbLnSSRf2R05FOM2YaATrL4F563U.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x214,240x321,360x481,480x641,540x721,640x855,720x962,1080x1443,1280x1710,1440x1924,1916x2560&from=bu&u=Q76X8Go9GVH1P-gaoiNmehN8t6TaKOjNmGhrQyJawBg&cs=1916x0);
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-position: 50% 50%;
+  background-size: 100%;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: inset 0 0 0 5px #54e1548c, 0 0 0 1px #54e154;
+}
+/*
+#section-photo::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: url(https://sun9-48.vkuserphoto.ru/s/v1/ig2/vS1cotY_tsDJF4vLJWp0GqGdnu0vSFdcgN49Nv3SAs6y7ysYfO-afZoXe9qdMbLnSSRf2R05FOM2YaATrL4F563U.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x214,240x321,360x481,480x641,540x721,640x855,720x962,1080x1443,1280x1710,1440x1924,1916x2560&from=bu&u=Q76X8Go9GVH1P-gaoiNmehN8t6TaKOjNmGhrQyJawBg&cs=1916x0);
+  background-position: 50% 50%;
+  background-size: 100%;
+  border-radius: 100%;
+
+  filter: blur(10px);
+  z-index: -1;
+}
+*/
+
+#section-name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section-r span {
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be006e);
+  height: 380px;
+  width: calc(100% - 30px);
+  margin: 15px auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
+  box-sizing: border-box;
+  display: block;
+  color: #fff;
+  font-style: italic;
+  padding: 25px;
+  font-size: 16px;
+}
+
+
+
+#section-soc {
+  color: #fff;
+  font-weight: bold;
+  background: #59ff59;
+  border-radius: 20px;
+  padding: 10px 0;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#section-soc > span {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+#section-tw {
+  width: calc(100% - 150px);
+  margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  font-size: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section-box {
+  width: calc(33.3% - 10px);
+  height: 500px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
+  background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c004,transparent 50%),linear-gradient(145deg,transparent,#54e154);
+}
+#section-box-c {
+  margin: 0 15px;
+}
+
+#section-pr {
+  background: #59ff59;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+    margin-top: 0px;
+  font-weight: bold;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  border-radius: 16px;
+}
+#section-tw .section-body {
+  color: #fff;
+  font-style: italic;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+}
+
+
+#section-th {
+  background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15400 50%,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
+
+  margin-bottom: 10px;
+}
+
+.section-th-title {
+  color: #fff;
+  background: #59ff59;
+  height: 50px;
+  border-radius: 16px 0 16px 0;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+.section-th-l span, .section-th-r span {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<div id='logo'>
+			<span>Portfolio</span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href='#'>Home</a></li>
+				<li><a href='#'>FAQ</a></li>
+				<li><a href='#'>Feedback</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<section id='section-fr'>
+				<div class='section-title'>Обо мне</div>
+				<div class='section-body'>
+					<div class='section-l'>
+						<div id='photo-box'>
+							<span id='section-photo'></span>
+							<span id='section-name'>Илья Лисанти</span>
+							<div id='section-soc'>
+								<span><i class="fa-solid fa-envelope"></i> jordanbycom@gmail.com</span>
+								<span><i class="fa-brands fa-telegram"></i> @j0001000</span>
+							</div>
+						</div>
+					</div>
+					<div class='section-r'>
+						<span>Я SMM-специалист. Веду соцсети с 2006 года :) Помогу продвинуть ваш бизнес во «ВКонтакте», Фейсбук* и Инстаграм* – разработаю стратегию под целевую аудиторию, настрою таргетированную рекламу. Пишу сильные тексты и сама создаю визуальный контент для постов.</span>
+					</div>
+				</div>
+				<div class='section-footer'></div>
+			</section>
+			<div id='section-pr'>Проекты:</div>
+			<section id='section-tw'>
+				<div class='section-box' id='section-box-l'>
+					<div class='section-title'>Задача</div>
+					<div class='section-body'>Текст</div>
+				</div>
+				<div class='section-box' id='section-box-c'>
+					<div class='section-title'>Вызов</div>
+					<div class='section-body'>Текст</div>
+				</div>
+				<div class='section-box' id='section-box-r'>
+					<div class='section-title'>Результат</div>
+					<div class='section-body'>Текст</div>
+				</div>
+			</section>
+			<section id='section-th'>
+				<div class='section-title'>Навыки</div>
+				<div class='section-body'>
+					<div class='section-th-l'>
+						<div id='photo-box' style='padding: 0'>
+							<div class='section-th-title'>Hard Skills</div>
+							<span>Текст</span>
+						</div>
+					</div>
+					<div class='section-th-r'>
+						<div id='photo-box' style='padding: 0'>
+							<div class='section-th-title'>Soft Skills</div>
+							<span>Текст</span>
+						</div>
+					</div>
+				</div>
+				<div class='section-footer'></div>
+			</section>
+		</article>
+	</main>
+</body>
+</html>
