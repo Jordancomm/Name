@@ -323,6 +323,7 @@ footer {
 
   header {
     background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#48e70073),linear-gradient(#68ff001f,transparent),linear-gradient(#fff6,#68ff008c,#58a92080);
+    box-shadow: inset 0 -1px 0 0 #95ff59, inset 0 1px 0 0 #95ff59;
   }
 
   nav ul {
@@ -331,18 +332,29 @@ footer {
 
   nav ul li a {
     background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(#4f9515,#5fd22b,#84ff58);
+    box-shadow: 0 0 0 1px #7ef254, 0 0 0 2px #95ff59;
   }
 
   #section-fr, #section-th {
     background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#79e154,transparent 15% 85%,#80e154),linear-gradient(135deg,#2ac00063 15%,transparent,#33c00063 85%),linear-gradient(transparent 75%,#fff0 75%,#87e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e15400);
+    box-shadow: inset 0 0 0 1px #95ff59;
   }
 
   .section-title::before, .section-footer::before {
     background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#3de700),linear-gradient(#5cff00,transparent),linear-gradient(#fff6,#5cff00,#58a920);
   }
-  
+  .section-title::before {
+    box-shadow: 0 1px 0 0 #95ff59, 0 -2px 0 0 #73e154;
+  }
+
+  .section-footer::before {
+    box-shadow: 0 1px 0 0 #95ff59,0 0 0 1px #73e154;
+  }  
+
+
   #section-fr .section-box, #section-th .section-box {
     background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#70dd3fcf 100%,#3bbe00cf);
+    box-shadow: inset 0 0 0 2px #7ef254, inset 0 0 0 3px #80e154;
   }
 
   #section-soc, #section-pr, .section-th-title, footer {
@@ -351,6 +363,7 @@ footer {
 
   #section-tw .section-box {
     background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#2dc00473,transparent 50%),linear-gradient(145deg,transparent,#80e15469);
+    box-shadow: inset 0 0 0 2px #77f254, inset 0 0 0 3px #79e154;
   }
 
 }
