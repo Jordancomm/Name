@@ -21,6 +21,9 @@ body {
   font-family: Arial, sans-serif;
 
   background: #00c000;
+  position: relative;
+  background: #2ecb2e;
+  background: #51d351;
 }
 
 
@@ -34,6 +37,29 @@ ul {
   padding: 0;
 }
 
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background: #59ff59;
+  box-sizing: border-box;
+  padding: 0 75px;
+  display: flex;
+  background: #38e338;
+
+  background: #59e459;
+}
+.footer-box {
+  width: 25%;
+  height: 100%;
+}
+#logo {
+  text-align: center;
+}
 
 header {
   background: linear-gradient(180deg,green,white);
@@ -46,6 +72,13 @@ header {
   padding: 0 75px;
 
   box-shadow: inset 0 -1px 0 0 #54e154, inset 0 1px 0 0 #54e154;
+
+  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#11c011,white);
+  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#1dda1d,white);
+
+  background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#00e70073),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#00ff008c,#3ea920);
+  background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#00e70073),linear-gradient(#2cff001f,transparent),linear-gradient(#fff6,#00ff008c,#3ea92080);
+  box-shadow: inset 0 -1px 0 0 #59ff59, inset 0 1px 0 0 #59ff59;
 }
 header > * {
   display: inline-block;
@@ -92,10 +125,12 @@ nav ul li a {
   font-weight: bold;
 
   font-style: italic;
+  background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(#259515,#2bd22b,#58ff58);
+  box-shadow: 0 0 0 1px #54f254, 0 0 0 2px #59ff59;
 }
 
 main {
-
+  padding-bottom: 160px;
 }
 article {
 
@@ -118,6 +153,11 @@ article {
 
   box-sizing: border-box;
   padding-bottom: 10px;
+
+  background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
+
+  background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c00063 15%,transparent,#00c00063 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e15400);
+  box-shadow: inset 0 0 0 1px #59ff59;
 }
 #section-fr, #section-tw, #section-th {
   display: block;
@@ -134,6 +174,11 @@ article {
   border-radius: 30px 30px 0 0;
 
   position: relative;
+  box-shadow: 0 2px 0 0 #54e154;
+  box-shadow: 0 2px 0 0 #54e154, 0 -1px 0 0 #54e154;
+  box-shadow: 0 2px 0 0 #54e154, 0 -2px 0 0 #73e154;
+  z-index: 0;
+  box-shadow: 0 1px 0 0 #59ff59, 0 -2px 0 0 #73e154;
 }
 .section-title::before {
   content: '';
@@ -144,7 +189,14 @@ article {
   height: 100%;
   background: linear-gradient(white,transparent),linear-gradient(transparent,#54e154,#00c000);
   border-radius: 30px 30px 0 0;
-  mix-blend-mode: overlay;
+/*  mix-blend-mode: overlay;*/
+  background: linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
+  filter: grayscale(0.15);
+  filter: grayscale(0.15) contrast(105%);
+  filter: grayscale(0.25) contrast(105%);
+  z-index: -1;
+
+  background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
 }
 .section-body {
   min-height: 390px;
@@ -159,7 +211,7 @@ article {
   box-shadow: 0 1px 0 0 #59ff59,0 0 0 1px #54e154;
 
   position: relative;
-  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);
+/*  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);*/
 }
 .section-footer::before {
   content: '';
@@ -173,7 +225,13 @@ article {
 /*  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);*/
 /*  background: linear-gradient(#ffffff61,#ffffff1f,transparent),linear-gradient(transparent,#54e154,#00c000);*/
 
-  mix-blend-mode: overlay;
+/*  mix-blend-mode: overlay;*/
+  background: linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
+  filter: grayscale(0.15);
+  filter: grayscale(0.15) contrast(105%);
+  filter: grayscale(0.25) contrast(105%);
+
+  background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
 }
 
 .section-l, .section-r, .section-th-l, .section-th-r {
@@ -205,6 +263,11 @@ article {
   box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
   box-sizing: border-box;
   padding-top: 25px;
+
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#1ed41ecf 100%,#00be00cf);
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#3fdd3fcf 100%,#00be00cf);
+
+  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
 }
 
 #section-photo {
@@ -261,6 +324,13 @@ article {
   font-style: italic;
   padding: 25px;
   font-size: 16px;
+
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be00cf);
+
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#1ed41ecf 100%,#00be00cf);
+  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#3fdd3fcf 100%,#00be00cf);
+
+  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
 }
 
 
@@ -274,6 +344,8 @@ article {
   width: calc(100% - 100px);
   margin: 0 auto;
   margin-top: 15px;
+  background: #38e338;
+  background: #59e459;
 }
 #section-soc > span {
   display: block;
@@ -300,6 +372,10 @@ article {
   border-radius: 30px;
   box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
   background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c004,transparent 50%),linear-gradient(145deg,transparent,#54e154);
+
+  background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c00473,transparent 50%),linear-gradient(145deg,transparent,#54e15469);
+
+  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
 }
 #section-box-c {
   margin: 0 15px;
@@ -318,6 +394,9 @@ article {
   line-height: 50px;
   margin-top: 10px;
   border-radius: 16px;
+  background: #38e338;
+
+  background: #59e459;
 }
 #section-tw .section-body {
   color: #fff;
@@ -332,6 +411,8 @@ article {
   background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15400 50%,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
 
   margin-bottom: 10px;
+
+  background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
 }
 
 .section-th-title {
@@ -344,6 +425,9 @@ article {
   padding: 0 20px;
   font-weight: bold;
   display: inline-block;
+  background: #38e338;
+
+  background: #59e459;
 }
 .section-th-l span, .section-th-r span {
   color: #fff;
@@ -355,7 +439,7 @@ article {
 }
 
 
-
+/*
 @media (color-gamut: p3) {
   body {
     background: #60c000;
@@ -382,7 +466,7 @@ article {
     background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#44be00cf,#3bbe006e);
   }
 }
-
+*/
 </style>
 
 </head>
@@ -455,5 +539,22 @@ article {
 			</section>
 		</article>
 	</main>
+
+	<footer>
+		<div class='footer-box'>
+			<div id='logo'>
+				<span style='line-height: 150px;'>Portfolio</span>
+			</div>
+		</div>
+		<div class='footer-box'>
+
+		</div>
+		<div class='footer-box'>
+
+		</div>
+		<div class='footer-box'>
+
+		</div>
+	</footer>
 </body>
 </html>
