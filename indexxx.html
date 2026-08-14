@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Portfolio</title>
 
+<meta content='width=1100' name='viewport'/>
+<title>Portfolio</title>
 
 <!-- FONTS GOOGLE -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +14,15 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.3.1/css/all.css">
 
 <style>
+/* * * * * * ROOT * * * * * */
 body {
   margin: 0;
   padding: 0;
   font-size: 14px;
   font-family: Arial, sans-serif;
-
-  background: #00c000;
   position: relative;
-  background: #2ecb2e;
   background: #51d351;
 }
-
-
 a {
   text-decoration: none;
   color: initial;
@@ -37,46 +33,21 @@ ul {
   padding: 0;
 }
 
-footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  width: 100%;
-  height: 150px;
-  background: #59ff59;
-  box-sizing: border-box;
-  padding: 0 75px;
-  display: flex;
-  background: #38e338;
+main {
+  padding-bottom: 160px;
+}
+article {
 
-  background: #59e459;
-}
-.footer-box {
-  width: 25%;
-  height: 100%;
-}
-#logo {
-  text-align: center;
 }
 
+/* * * * * * HEADER * * * * * */
 header {
-  background: linear-gradient(180deg,green,white);
-  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#03bc03,white);
   height: 100px;
   width: 100%;
   box-shadow: inset 0 -1px 0 0 green, inset 0 1px 0 0 green;
   font-size: 0;
   box-sizing: border-box;
   padding: 0 75px;
-
-  box-shadow: inset 0 -1px 0 0 #54e154, inset 0 1px 0 0 #54e154;
-
-  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#11c011,white);
-  background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#1dda1d,white);
-
-  background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#00e70073),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#00ff008c,#3ea920);
   background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#00e70073),linear-gradient(#2cff001f,transparent),linear-gradient(#fff6,#00ff008c,#3ea92080);
   box-shadow: inset 0 -1px 0 0 #59ff59, inset 0 1px 0 0 #59ff59;
 }
@@ -91,15 +62,15 @@ header nav {
   width: calc(100% - 300px);
   text-align: right;
 }
-#logo span {
+#header-logo span, #footer-logo span {
   color: #fff;
   font-size: 36px;
   font-weight: bold;
   line-height: 100px;
-
   font-family: "Dancing Script", cursive;
 }
 
+/* * * * * * NAVIGATION * * * * * */
 nav ul {
   background: linear-gradient(white,transparent 50%),linear-gradient(transparent,#54e154);
   display: inline-block;
@@ -110,57 +81,29 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  line-height: 100px;
-
   line-height: 60px;
 }
 nav ul li a {
   padding: 8px 15px;
   margin: 0 5px;
   color: #fff;
-  background: green;
-  background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(green,#01ab01,#0f0);
   border-radius: 10px;
-  box-shadow: 0 0 0 1px #ace9ac,0 0 0 2px #00d6005c;
   font-weight: bold;
-
   font-style: italic;
   background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(#259515,#2bd22b,#58ff58);
   box-shadow: 0 0 0 1px #54f254, 0 0 0 2px #59ff59;
 }
 
-main {
-  padding-bottom: 160px;
-}
-article {
-
-}
-#section-fr, #section-th { /* SECTION */
+/* * * * * * SECTION FIRST * * * * * */
+#section-fr, #section-th {
   width: calc(100% - 150px);
-/*  min-height: 500px;*/
-  background: white;
   margin: 0 auto;  
   margin-top: 10px;
   border-radius: 30px;
-  background: #54e154;
-
-  display: none;
-
-  background: linear-gradient(#ffffff47,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000,transparent,#00c000),linear-gradient(90deg,transparent,#54e154);
-  box-shadow: inset 0 0 0 1px #54e154;
-  background: linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000,transparent,#00c000),linear-gradient(90deg,transparent,#54e154);
-  background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15442 50%,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
-
   box-sizing: border-box;
   padding-bottom: 10px;
-
-  background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
-
   background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c00063 15%,transparent,#00c00063 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e15400);
   box-shadow: inset 0 0 0 1px #59ff59;
-}
-#section-fr, #section-tw, #section-th {
-  display: block;
 }
 .section-title {
   color: #fff;
@@ -170,13 +113,8 @@ article {
   line-height: 50px;
   width: 100%;
   height: 50px;
-/*  background: #54e154;*/
   border-radius: 30px 30px 0 0;
-
   position: relative;
-  box-shadow: 0 2px 0 0 #54e154;
-  box-shadow: 0 2px 0 0 #54e154, 0 -1px 0 0 #54e154;
-  box-shadow: 0 2px 0 0 #54e154, 0 -2px 0 0 #73e154;
   z-index: 0;
   box-shadow: 0 1px 0 0 #59ff59, 0 -2px 0 0 #73e154;
 }
@@ -187,15 +125,9 @@ article {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(white,transparent),linear-gradient(transparent,#54e154,#00c000);
   border-radius: 30px 30px 0 0;
-/*  mix-blend-mode: overlay;*/
-  background: linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
-  filter: grayscale(0.15);
-  filter: grayscale(0.15) contrast(105%);
   filter: grayscale(0.25) contrast(105%);
   z-index: -1;
-
   background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
 }
 .section-body {
@@ -203,15 +135,12 @@ article {
   font-size: 0;
 }
 .section-footer {
-/*  background: #54e154;*/
   width: calc(100% - 30px);
   margin: 0 auto;
   height: 50px;
   border-radius: 20px;
   box-shadow: 0 1px 0 0 #59ff59,0 0 0 1px #54e154;
-
   position: relative;
-/*  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);*/
 }
 .section-footer::before {
   content: '';
@@ -221,55 +150,43 @@ article {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background: linear-gradient(#ffffff38,#54e154);
-/*  background: linear-gradient(#ffffffa8,#ffffff30,transparent),linear-gradient(transparent,#54e154,#00c000);*/
-/*  background: linear-gradient(#ffffff61,#ffffff1f,transparent),linear-gradient(transparent,#54e154,#00c000);*/
-
-/*  mix-blend-mode: overlay;*/
-  background: linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
-  filter: grayscale(0.15);
-  filter: grayscale(0.15) contrast(105%);
   filter: grayscale(0.25) contrast(105%);
-
   background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#00e700),linear-gradient(#2cff00,transparent),linear-gradient(#fff6,#0f0,#3ea920);
 }
-
-.section-l, .section-r, .section-th-l, .section-th-r {
+.section-fr-l, .section-fr-r, .section-th-l, .section-th-r {
   width: 30%;
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
-
   position: relative;
   z-index: 1;
 }
-.section-r {
+.section-fr-r {
   width: 70%;
 }
-
-.section-th-l, .section-th-r {
-  width: 50%;
-}
-
-
-#photo-box {
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be00cf);
+#section-fr .section-box, #section-th .section-box {
   height: 380px;
   width: calc(100% - 30px);
   margin: 15px auto;
   border-radius: 16px;
   position: relative;
   z-index: 1;
-  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
   box-sizing: border-box;
-  padding-top: 25px;
-
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#1ed41ecf 100%,#00be00cf);
   background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#3fdd3fcf 100%,#00be00cf);
-
   box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
 }
-
+#section-fr .section-box-l {
+  padding-top: 25px;
+}
+#section-fr .section-box-r {
+  box-sizing: border-box;
+  display: block;
+  color: #fff;
+  font-style: italic;
+  padding: 25px;
+  font-size: 16px;
+}
+/* * * * * * SECTION FIRST LEFT * * * * * */
 #section-photo {
   background: url(https://sun9-48.vkuserphoto.ru/s/v1/ig2/vS1cotY_tsDJF4vLJWp0GqGdnu0vSFdcgN49Nv3SAs6y7ysYfO-afZoXe9qdMbLnSSRf2R05FOM2YaATrL4F563U.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x214,240x321,360x481,480x641,540x721,640x855,720x962,1080x1443,1280x1710,1440x1924,1916x2560&from=bu&u=Q76X8Go9GVH1P-gaoiNmehN8t6TaKOjNmGhrQyJawBg&cs=1916x0);
   width: 200px;
@@ -282,24 +199,6 @@ article {
   margin: 0 auto;
   box-shadow: inset 0 0 0 5px #54e1548c, 0 0 0 1px #54e154;
 }
-/*
-#section-photo::before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background: url(https://sun9-48.vkuserphoto.ru/s/v1/ig2/vS1cotY_tsDJF4vLJWp0GqGdnu0vSFdcgN49Nv3SAs6y7ysYfO-afZoXe9qdMbLnSSRf2R05FOM2YaATrL4F563U.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x214,240x321,360x481,480x641,540x721,640x855,720x962,1080x1443,1280x1710,1440x1924,1916x2560&from=bu&u=Q76X8Go9GVH1P-gaoiNmehN8t6TaKOjNmGhrQyJawBg&cs=1916x0);
-  background-position: 50% 50%;
-  background-size: 100%;
-  border-radius: 100%;
-
-  filter: blur(10px);
-  z-index: -1;
-}
-*/
-
 #section-name {
   color: #fff;
   font-weight: bold;
@@ -308,32 +207,6 @@ article {
   text-align: center;
   margin-top: 15px;
 }
-
-.section-r span {
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be006e);
-  height: 380px;
-  width: calc(100% - 30px);
-  margin: 15px auto;
-  border-radius: 16px;
-  position: relative;
-  z-index: 1;
-  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
-  box-sizing: border-box;
-  display: block;
-  color: #fff;
-  font-style: italic;
-  padding: 25px;
-  font-size: 16px;
-
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#00be00cf,#00be00cf);
-
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#1ed41ecf 100%,#00be00cf);
-  background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#3fdd3fcf 100%,#00be00cf);
-
-  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
-}
-
-
 
 #section-soc {
   color: #fff;
@@ -352,40 +225,10 @@ article {
   text-align: center;
   padding: 5px 0;
 }
-
-
-#section-tw {
-  width: calc(100% - 150px);
-  margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  font-size: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.section-box {
-  width: calc(33.3% - 10px);
-  height: 500px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  border-radius: 30px;
-  box-shadow: inset 0 0 0 2px #00c000, inset 0 0 0 3px #54e154;
-  background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c004,transparent 50%),linear-gradient(145deg,transparent,#54e154);
-
-  background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c00473,transparent 50%),linear-gradient(145deg,transparent,#54e15469);
-
-  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
-}
-#section-box-c {
-  margin: 0 15px;
-}
-
+/* * * * * * SECTION TWO * * * * * */
 #section-pr {
-  background: #59ff59;
   width: calc(100% - 150px);
   margin: 0 auto;
-    margin-top: 0px;
   font-weight: bold;
   color: #fff;
   box-sizing: border-box;
@@ -394,9 +237,28 @@ article {
   line-height: 50px;
   margin-top: 10px;
   border-radius: 16px;
-  background: #38e338;
-
   background: #59e459;
+}
+
+#section-tw {
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  font-size: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#section-tw .section-box {
+  width: calc(33.3% - 10px);
+  height: 500px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#04c00473,transparent 50%),linear-gradient(145deg,transparent,#54e15469);
+  box-shadow: inset 0 0 0 2px #54f254, inset 0 0 0 3px #54e154;
+}
+#section-tw #section-box-c {
+  margin: 0 15px;
 }
 #section-tw .section-body {
   color: #fff;
@@ -407,17 +269,12 @@ article {
 }
 
 
-#section-th {
-  background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15400 50%,transparent),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
-
-  margin-bottom: 10px;
-
-  background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#54e154,transparent 15% 85%,#54e154),linear-gradient(135deg,#00c000 15%,transparent,#00c000 85%),linear-gradient(transparent 75%,#fff0 75%,#54e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e154);
+/* * * * * * SECTION THIRD * * * * * */
+.section-th-l, .section-th-r {
+  width: 50%;
 }
-
 .section-th-title {
   color: #fff;
-  background: #59ff59;
   height: 50px;
   border-radius: 16px 0 16px 0;
   line-height: 50px;
@@ -425,8 +282,6 @@ article {
   padding: 0 20px;
   font-weight: bold;
   display: inline-block;
-  background: #38e338;
-
   background: #59e459;
 }
 .section-th-l span, .section-th-r span {
@@ -438,41 +293,89 @@ article {
   font-style: italic;
 }
 
+/* * * * * * FOOTER * * * * * */
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 0 75px;
+  display: flex;
+  background: #59e459;
+}
+.footer-box {
+  width: 25%;
+  height: 100%;
+}
+#footer-logo span {
+  line-height: 150px;
+  display: block;
+  text-align: center;
+}
 
-/*
+/* * * * * * AMOLED DISPLAY * * * * * */
 @media (color-gamut: p3) {
   body {
-    background: #60c000;
+    background: #80d351;
   }
+
   header {
-    background: linear-gradient(#ffffff1f 50%,transparent 50%),linear-gradient(0deg,#57bc03,white);
+    background: linear-gradient(#ffffff2b 50%,transparent 50%),linear-gradient(#ffffffdb,#ffffff61,transparent),linear-gradient(#ffffff87,transparent 50%,#48e70073),linear-gradient(#68ff001f,transparent),linear-gradient(#fff6,#68ff008c,#58a92080);
+    box-shadow: inset 0 -1px 0 0 #95ff59, inset 0 1px 0 0 #95ff59;
   }
+
   nav ul {
-    background: linear-gradient(white,transparent 50%),linear-gradient(transparent,#a1e154);
+    background: linear-gradient(white,transparent 50%),linear-gradient(transparent,#87e154);
   }
+
   nav ul li a {
-    background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(#588000,#4eab01,#80ff00);
+    background: linear-gradient(#ffffff7d 50%,transparent 50%),linear-gradient(white,transparent 75%),linear-gradient(#4f9515,#5fd22b,#84ff58);
+    box-shadow: 0 0 0 1px #7ef254, 0 0 0 2px #95ff59;
   }
+
   #section-fr, #section-th {
-    box-shadow: inset 0 0 0 1px #87e154;
-    background: linear-gradient(transparent,#54e15400 50%,transparent 50%),linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(transparent 50%,#54e15442 50%,transparent),linear-gradient(135deg,#8de154,transparent 15% 85%,#9be154),linear-gradient(135deg,#45c000 15%,transparent,#3cc000 85%),linear-gradient(transparent 75%,#fff0 75%,#9be154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#9be154);
+    background: linear-gradient(#fff3,#fff0 35%,transparent 35%),linear-gradient(135deg,#79e154,transparent 15% 85%,#80e154),linear-gradient(135deg,#2ac00063 15%,transparent,#33c00063 85%),linear-gradient(transparent 75%,#fff0 75%,#87e154),linear-gradient(transparent 75%,#fff0),linear-gradient(#ffffff47,transparent 50%),linear-gradient(90deg,transparent,#54e15400);
+    box-shadow: inset 0 0 0 1px #95ff59;
   }
-  #photo-box {
-    background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#5fbe00cf,#56be00cf);
-    box-shadow: inset 0 0 0 2px #4ec000, inset 0 0 0 3px #8de154;
+
+  .section-title::before, .section-footer::before {
+    background: linear-gradient(#ffffff1c 100%,transparent),linear-gradient(#ffffff87,transparent 50%,#3de700),linear-gradient(#5cff00,transparent),linear-gradient(#fff6,#5cff00,#58a920);
   }
-  .section-r span {
-    box-shadow: inset 0 0 0 2px #4ec000, inset 0 0 0 3px #8de154;
-    background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#44be00cf,#3bbe006e);
+  .section-title::before {
+    box-shadow: 0 1px 0 0 #95ff59, 0 -2px 0 0 #73e154;
   }
+
+  .section-footer::before {
+    box-shadow: 0 1px 0 0 #95ff59,0 0 0 1px #73e154;
+  }  
+
+
+  #section-fr .section-box, #section-th .section-box {
+    background: linear-gradient(145deg,#ffffff78,transparent 25% 85%,#ffffff5e),linear-gradient(#70dd3fcf 100%,#3bbe00cf);
+    box-shadow: inset 0 0 0 2px #7ef254, inset 0 0 0 3px #80e154;
+  }
+
+  #section-soc, #section-pr, .section-th-title, footer {
+    background: #8be459;
+  }
+
+  #section-tw .section-box {
+    background: linear-gradient(135deg,#ffffff70,transparent 20% 80%,#ffffff5c),linear-gradient(#2dc00473,transparent 50%),linear-gradient(145deg,transparent,#80e15469);
+    box-shadow: inset 0 0 0 2px #77f254, inset 0 0 0 3px #79e154;
+  }
+
 }
-*/
+
 </style>
 
 </head>
 <body>
 	<header>
-		<div id='logo'>
+		<div id='header-logo'>
 			<span>Portfolio</span>
 		</div>
 		<nav>
@@ -488,8 +391,8 @@ article {
 			<section id='section-fr'>
 				<div class='section-title'>Обо мне</div>
 				<div class='section-body'>
-					<div class='section-l'>
-						<div id='photo-box'>
+					<div class='section-fr-l'>
+						<div class='section-box section-box-l'>
 							<span id='section-photo'></span>
 							<span id='section-name'>Илья Лисанти</span>
 							<div id='section-soc'>
@@ -498,13 +401,15 @@ article {
 							</div>
 						</div>
 					</div>
-					<div class='section-r'>
-						<span>Я SMM-специалист. Веду соцсети с 2006 года :) Помогу продвинуть ваш бизнес во «ВКонтакте», Фейсбук* и Инстаграм* – разработаю стратегию под целевую аудиторию, настрою таргетированную рекламу. Пишу сильные тексты и сама создаю визуальный контент для постов.</span>
+					<div class='section-fr-r'>
+						<span class='section-box section-box-r'>Я SMM-специалист. Веду соцсети с 2006 года :) Помогу продвинуть ваш бизнес во «ВКонтакте», Фейсбук* и Инстаграм* – разработаю стратегию под целевую аудиторию, настрою таргетированную рекламу. Пишу сильные тексты и сама создаю визуальный контент для постов.</span>
 					</div>
 				</div>
 				<div class='section-footer'></div>
 			</section>
+
 			<div id='section-pr'>Проекты:</div>
+
 			<section id='section-tw'>
 				<div class='section-box' id='section-box-l'>
 					<div class='section-title'>Задача</div>
@@ -519,17 +424,18 @@ article {
 					<div class='section-body'>Текст</div>
 				</div>
 			</section>
+
 			<section id='section-th'>
 				<div class='section-title'>Навыки</div>
 				<div class='section-body'>
 					<div class='section-th-l'>
-						<div id='photo-box' style='padding: 0'>
+						<div class='section-box' style='padding: 0'>
 							<div class='section-th-title'>Hard Skills</div>
 							<span>Текст</span>
 						</div>
 					</div>
 					<div class='section-th-r'>
-						<div id='photo-box' style='padding: 0'>
+						<div class='section-box' style='padding: 0'>
 							<div class='section-th-title'>Soft Skills</div>
 							<span>Текст</span>
 						</div>
@@ -542,8 +448,8 @@ article {
 
 	<footer>
 		<div class='footer-box'>
-			<div id='logo'>
-				<span style='line-height: 150px;'>Portfolio</span>
+			<div id='footer-logo'>
+				<span>Portfolio</span>
 			</div>
 		</div>
 		<div class='footer-box'>
